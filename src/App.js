@@ -47,6 +47,8 @@ function App() {
   ]
   )
 
+  // Hurrah! we have almost done with front end
+
   const [start, setStart] = useState(false);
   const [indexNo, setIndexNo] = useState(0);
   const [score, setScore] = useState(0);
@@ -54,6 +56,7 @@ function App() {
   const [buttonText, setButtonText] = useState('Next');
   const [resultScreen, setResultScreen ] = useState(false);
  
+  //This function will check the question
   let checkAnswer = (selected, answer) => {
     if (selected == answer) {
       setScore(score + 1)
